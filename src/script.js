@@ -58,6 +58,7 @@ function requestApi(city, key) {
 
 button.addEventListener("click", function () {
    if (!search.value == "") {
+      image.src = "";
       weatherInformation.innerHTML = "";
       wind.innerHTML = "";
       humidity.innerHTML = "";
