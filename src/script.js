@@ -33,8 +33,11 @@ function requestApi(city, key) {
             case "Haze":
                image.src = "src/images/mist.png";
                break;
+            case "Mist":
+               image.src = "src/images/mist.png";
+               break;
             case "Rain":
-               image.src = "src/images/Rain.png";
+               image.src = "src/images/rain.png";
                break;
             case "Snow":
                image.src = "src/images/snow.png";
