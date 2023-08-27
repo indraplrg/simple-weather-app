@@ -12,10 +12,11 @@ body {
    padding: 10px;
    font-family: "Koulen", cursive;
    overflow-y: hidden;
+   position: relative;
 }
 
 .container {
-   width: 20em;
+   width: 17em;
    height: max-content;
    background: #5c8984;
    display: flex;
@@ -23,6 +24,20 @@ body {
    align-items: center;
    flex-direction: column;
    overflow: hidden;
+   box-shadow: 7px 7px 10px rgba(42, 86, 81, 0.5);
+}
+
+.behindText {
+   width: max-content;
+   text-align: center;
+   position: absolute;
+   z-index: -9999999;
+   font-size: 8em;
+   opacity: 0.5;
+   bottom: 150px;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+   /* border: red solid; */
+   /* letter-spacing: -10px; */
 }
 
 /* Search Board */
@@ -38,12 +53,19 @@ body {
    width: 100%;
    padding: 20px;
    color: white;
+   font-size: 1.1em;
 }
 
 #search:focus {
    outline: none;
    border: none;
    color: whitesmoke;
+   font-size: 1.1em;
+}
+
+#search::placeholder {
+   color: white;
+   font-size: 1.2em;
 }
 
 #search-button {
@@ -87,4 +109,16 @@ body {
 
 .sub-board div span {
    margin-top: 10px;
+}
+
+/* BreakPoints */
+@media screen and (min-width: 810px) {
+   .container {
+      width: 20em;
+   }
+
+   .behindText {
+      font-size: 10em;
+      /* transform: translateY(150px); */
+   }
 }
