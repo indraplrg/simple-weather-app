@@ -6,7 +6,7 @@ const humidity = document.getElementById("humidity");
 const wind = document.getElementById("wind");
 const country = document.getElementById("country");
 
-API_KEY = "a053c811ccda4d46759bfdf586d7ebc1";
+API_KEY = "f02a58c355c2a42fb63b2c5684031c6f";
 
 requestApi("amerika serikat", API_KEY);
 
